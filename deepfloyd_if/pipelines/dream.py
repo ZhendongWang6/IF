@@ -106,7 +106,7 @@ def dream(
         if_III_kwargs = if_III_kwargs or {}
 
         stageIII_generations = []
-        for idx in range(len(stageII_generations)):
+        for idx in range(len(stageII_generations)): # stage_III计算量大，循环减小每一次的计算量
             if if_III.use_diffusers:
                 if_III_kwargs['prompt'] = prompt[idx: idx+1]
 

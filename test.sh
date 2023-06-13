@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=7 python main_test_deepif.py --task classical_sr --scale 4 --folder_lq testsets/Set5/LR_bicubic/X4 --folder_gt testsets/Set5/HR

@@ -128,3 +128,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+model_zoo
+pics
+pics_IR
+results
+testsets

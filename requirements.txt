@@ -1,7 +1,7 @@
 tqdm
 numpy
-torch<2.0.0
-torchvision
+# torch<2.0.0
+# torchvision
 omegaconf
 matplotlib
 Pillow>=9.2.0

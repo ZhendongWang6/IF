@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "swinir_test",
+            "type": "python",
+            "request": "launch",
+            "program": "main_test_swinir.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--task",
+                "classical_sr",
+                "--scale",
+                "4",
+                "--training_patch_size",
+                "48",
+                "--model_path",
+                "model_zoo/swinir/001_classicalSR_DIV2K_s48w8_SwinIR-M_x4.pth",
+                "--folder_lq",
+                "testsets/Set5/LR_bicubic/X4",
+                "--folder_gt",
+                "testsets/Set5/HR"
+            ]
+        },
+        {
+            "name": "deepif_test",
+            "type": "python",
+            "request": "launch",
+            "program": "main_test_deepif.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--task",
+                "classical_sr",
+                "--scale",
+                "4",
+                "--folder_lq",
+                "testsets/Set5/LR_bicubic/X4",
+                "--folder_gt",
+                "testsets/Set5/HR"
+            ]
+        }
+    ]
+}
